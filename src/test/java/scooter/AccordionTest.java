@@ -9,9 +9,9 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class AccordionTest extends  BaseTest{
-    private final int id;
+    private int id;
 
-    private final String expectedResult;
+    private String expectedResult;
 
     public AccordionTest(int id, String expectedResult) {
         this.id = id;

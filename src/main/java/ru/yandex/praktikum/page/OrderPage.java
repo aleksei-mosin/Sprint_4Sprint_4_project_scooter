@@ -5,36 +5,36 @@ import org.openqa.selenium.WebDriver;
 
 public class OrderPage {
     // Поле "Имя"
-    private static final By customerName = By.xpath(".//input[@placeholder='* Имя']");
+    private By customerName = By.xpath(".//input[@placeholder='* Имя']");
     // Поле "Фамилия"
-    private static final By customerSurname = By.xpath(".//input[@placeholder='* Фамилия']");
+    private By customerSurname = By.xpath(".//input[@placeholder='* Фамилия']");
     //Поле "Адресс доставки"
-    private static final By customerAddress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
+    private By customerAddress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
     // Поле выбора станции метро
-    private static final By metro = By.xpath(".//input[@placeholder='* Станция метро']");
+    private By metro = By.xpath(".//input[@placeholder='* Станция метро']");
     // Поле  "Телефон"
-    private static final By phoneNumber = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
+    private By phoneNumber = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
     // Кнопка "Далее"
-    private static final By nextButton = By.cssSelector(".Button_Middle__1CSJM");
+    private By nextButton = By.cssSelector(".Button_Middle__1CSJM");
     // Поле для указания даты
-    private static final By datePicker = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
+    private By datePicker = By.xpath(".//input[@placeholder='* Когда привезти самокат']");
     // Поле "Срок аренды"
-    private static final By rental = By.className("Dropdown-placeholder");
+    private By rental = By.className("Dropdown-placeholder");
     // Поле выпадающего меню с сроком аренды
-    private static final By rentalPeriod = By.xpath("//div[contains(text(), 'семеро суток')]");
+    private By rentalPeriod = By.xpath("//div[contains(text(), 'семеро суток')]");
     // Чек бокс для выбора черного самока
-    private static final By scooterColourBlack = By.xpath("//label[@for='black']");
+    private By scooterColourBlack = By.xpath("//label[@for='black']");
     // Чек бокс для выбора серого самоката
-    private static final By scooterColourGrey = By.xpath("//label[@for='grey']");
+    private By scooterColourGrey = By.xpath("//label[@for='grey']");
     // Поле для ввода комментария для курьера
-    private final By commentForCourier = By.xpath(".//input[@placeholder='Комментарий для курьера']");
+    private By commentForCourier = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     // Кнопка "Заказать"
-    private final By orderButton = By.xpath(".//button[@class = 'Button_Button__ra12g Button_Middle__1CSJM']");
+    private By orderButton = By.xpath(".//button[@class = 'Button_Button__ra12g Button_Middle__1CSJM']");
     // Кнопка подтверждения заказа
-    private final By yesButton = By.xpath(".//button[@class = 'Button_Button__ra12g Button_Middle__1CSJM' and text()='Да']");
+    private By yesButton = By.xpath(".//button[@class = 'Button_Button__ra12g Button_Middle__1CSJM' and text()='Да']");
     // Статус заказа
-    private final By orderStatus = By.xpath(".//div[@class ='Order_ModalHeader__3FDaJ' and text()='Заказ оформлен']");
-    private final WebDriver driver;
+    private By orderStatus = By.xpath(".//div[@class ='Order_ModalHeader__3FDaJ' and text()='Заказ оформлен']");
+    private WebDriver driver;
 
 
     public OrderPage(WebDriver driver){

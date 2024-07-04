@@ -1,6 +1,6 @@
-package ru.yandex.praktikum.page;
+package ru.yandex.praktikum.constant;
 
-public class MainPageURL {
+public class MainPageURLConstant {
     public static final String URL = "https://qa-scooter.praktikum-services.ru/";
 
 }

@@ -33,7 +33,7 @@ public class BasePage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         element.click();
     }
-    // Метод проверяет ответ из раздела "Вопросы о важном"
+    // Возвращаем текст из ответа в разделе "Вопросы о важном"
     public String checkAccordionItemPanel(int answerId) {
         driver.findElement(By.id("accordion__panel-" + answerId)).isDisplayed();
         return driver.findElement(By.id("accordion__panel-" + answerId)).getText();
